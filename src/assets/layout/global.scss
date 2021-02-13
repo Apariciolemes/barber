@@ -1,0 +1,57 @@
+
+
+html,
+body {
+  font-family: "Proza Libre", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Proza Libre", sans-serif;
+}
+label {
+  font-family: "Proza Libre", sans-serif;
+  font-size: 14px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+   font-size: 18px;
+}
+
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+}
+
+.slide-enter-active {
+  animation: slide-in 0.3s ease;
+}
+
+.slide-leave-active {
+  animation: slide-out 0.3s ease;
+}
